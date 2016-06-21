@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Marker with images</title>
+<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" 
+rel="stylesheet" type="text/css" /> 
+
+<script type="text/javascript" 
+src="http://maps.google.com/maps/api/js?sensor=false">
+</script>
+<script type="text/javascript" src="js/routes.js"></script>
+
+</head>
+
+<body>
+<h1>Areas of oil and natural gas from Mexico</h1>
+<div>
+<strong>Start:</strong>
+<select id="start" onchange="calcRoute();">
+	<option value="Matamoros, Tamaulipas, Mexico">Tampico  </option>
+	<option value="Mexico City, Distrito Federal, Mexico">Mexico City</option>
+	<option value="Veracruz, Veracruz-Llave, Mexico">Veracruz</option>
+	<option value="Cancun, Quintana Roo, Mexico">Cancun</option>
+	<option value="Mazatlan, Sinaloa, Mexico">Sinaloa</option>
+</select>
+<strong>Escale:</strong>
+<select id="escale" onchange="calcRoute();">
+	<option value="Matamoros, Tamaulipas, Mexico">Tampico  </option>
+	<option value="Mexico City, Distrito Federal, Mexico">Mexico City</option>
+	<option value="Veracruz, Veracruz-Llave, Mexico">Veracruz</option>
+	<option value="Cancun, Quintana Roo, Mexico">Cancun</option>
+	<option value="Mazatlan, Sinaloa, Mexico">Sinaloa</option>
+</select>
+<strong>End:</strong>
+<select id="end" onchange="calcRoute1();">
+	<option value="Matamoros, Tamaulipas, Mexico">Tampico  </option>
+	<option value="Mexico City, Distrito Federal, Mexico">Mexico City</option>
+	<option value="Veracruz, Veracruz-Llave, Mexico">Veracruz</option>
+	<option value="Cancun, Quintana Roo, Mexico">Cancun</option>
+	<option value="Mazatlan, Sinaloa, Mexico">Sinaloa</option>
+</select>
+
+</div>
+<h3>Distance of Start to Escale: <strong id="distance">0</strong> km.</h3>
+
+ <h3>Robot: <strong id="rrobo">0</strong></h3> <br/><br/>
+ 
+<h3>Distance of Escale to end: <strong id="distance1">0</strong> km.</h3>
+ <h3>Robot: <strong id="rob">0</strong></h3> <br/>
+	<div  id="div_map"   
+		style="width: 800px; height:600px"> </div>
+</body>
+</html>
